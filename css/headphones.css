@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  border: 0;
+  min-width: 1200px;
+  font-family: "Lato", sans-serif;
+}
+
+.container {
+  min-width: 1200px;
+  padding: 0 60px;
+}
+
+section {
+  background-color: rgb(218, 218, 218);
+}
+
+h1 {
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-headphones {
+  background-image: url(../jpg/headphones.jpg);
+  background-size: cover;
+  min-height: 75vh;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header-headphones .header-row {
+  padding: 10px 60px;
+}
+.header-headphones .header-row nav {
+  min-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-headphones .header-row nav img {
+  height: 30px;
+}
+.header-headphones .header-row nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.header-headphones .header-row nav .navbar li {
+  padding: 0 20px;
+  font-weight: 300;
+}
+.header-headphones .header-row nav .navbar li a {
+  text-decoration: none;
+  color: #fff;
+}
+.header-headphones .header-row nav .user-tools {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+.header-headphones .header-row nav .user-tools li a {
+  font-size: 25px;
+  padding: 0 10px;
+  color: #fff;
+}
+.header-headphones .header-banner .banner-text .banner-title {
+  font-size: 90px;
+  margin: 0px;
+  font-weight: 700px;
+  line-height: 75px;
+  text-transform: none;
+}
+.header-headphones .header-banner .banner-text .banner-content {
+  color: #ffffff;
+  font-size: 23px;
+  font-weight: lighter;
+}
+.header-headphones .header-banner .banner-text .banner-content a {
+  color: white;
+}
+
+footer {
+  background-color: #000;
+}
+footer .footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(218, 218, 218);
+  width: 70%;
+  padding: 100px 60px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer-container h1 {
+  font-weight: normal;
+  font-size: 23px;
+}
+footer .footer-container a {
+  color: rgb(218, 218, 218);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+footer .footer-container ul {
+  list-style: none;
+  padding: 0;
+}
+footer .footer-container ul li {
+  padding: 5px 0;
+  font-size: 13px;
+}
+footer .footer-container .newsletter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 450px;
+}
+footer .footer-container .newsletter input {
+  background-color: #000;
+  border: 1px solid rgb(218, 218, 218);
+  padding: 15px;
+  font-weight: 300;
+  color: rgb(218, 218, 218);
+}
+footer .footer-container .newsletter label {
+  padding: 20px 0 18px;
+}
+footer .footer-container .newsletter .footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 30px;
+}
+footer .footer-container .newsletter .footer-links a {
+  padding-right: 40px;
+}
+footer .footer-container .newsletter p {
+  margin-top: 120px;
+  text-transform: uppercase;
+}

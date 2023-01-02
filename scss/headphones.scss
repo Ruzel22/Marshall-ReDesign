@@ -1,0 +1,158 @@
+body{
+  margin: 0;
+  border: 0;
+  min-width: 1200px;
+  font-family: 'Lato', sans-serif;
+}
+
+.container{
+  min-width: 1200px;
+  padding: 0 60px;
+}
+
+section{
+  background-color: rgb(218, 218, 218);
+}
+
+h1{
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0;
+}
+.header-headphones{
+  background-image: url(../jpg/headphones.jpg);
+  background-size: cover;
+  min-height: 75vh;
+  width: 100%;
+  color: #fff;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .header-row{
+    padding: 10px 60px;
+    nav{
+      min-width: 1200px;
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      text-transform: uppercase;
+      align-content: center;
+      align-items: center;
+      img{
+        height: 30px;
+      }
+      ul{
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+      }
+      .navbar{
+        li{
+          padding: 0 20px;
+          font-weight: 300;
+          a{
+            text-decoration: none;
+            color: #fff;
+          }
+        }
+      }
+      .user-tools{
+        display: flex;
+        justify-content:space-between;
+        padding: 0;
+        li{
+          a{
+            font-size:25px;
+            padding: 0 10px;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .header-banner{
+    .banner-text{
+      
+      .banner-title{
+        font-size: 90px;
+        margin: 0px;
+        font-weight:700px;
+        line-height: 75px;
+        text-transform:none;
+      }
+      .banner-content{
+        color:#ffffff;
+        font-size: 23px;
+        font-weight:lighter;
+
+        a{
+          color: white
+        }
+      }
+    }
+  }
+}
+
+footer{
+  background-color: #000;
+  
+  .footer-container{
+    display: flex;
+    color: rgb(218, 218, 218);
+    width: 70%;
+    padding: 100px 60px;
+    justify-content: space-between;
+    h1{
+      font-weight: normal;
+      font-size: 23px;
+    }
+    a{
+      color: rgb(218, 218, 218);
+      text-decoration: none;
+      text-transform: uppercase;
+
+    }
+    ul{
+      list-style: none;
+      padding: 0;
+      li{
+        padding: 5px 0;
+        font-size: 13px;
+      }
+    }
+    .newsletter{
+      display: flex;
+      flex-direction: column;
+      width: 450px;
+      input{
+        background-color: #000;
+        border: 1px solid rgb(218, 218, 218);
+        padding: 15px;
+        font-weight: 300;
+        color: rgb(218, 218, 218);
+      }
+      label{
+        padding: 20px 0 18px;
+       
+      }
+      .footer-links{
+        display: flex;
+        padding-top: 30px;
+        a{
+          padding-right: 40px;
+        }
+      }
+      p{
+        margin-top: 120px;
+        text-transform: uppercase;
+
+      }
+    }
+  }
+ 
+}
