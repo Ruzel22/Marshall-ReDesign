@@ -110,8 +110,6 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   }
   items.forEach((element) => {
-    console.log("ok");
-    console.log(document.querySelector(".shop"));
 
     new Card(
       element.src,

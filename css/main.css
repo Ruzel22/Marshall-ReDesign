@@ -644,20 +644,20 @@ footer .footer-container .newsletter p {
 
 .container-shop {
   min-width: 1200px;
-  padding: 0 90px;
+  padding: 0 140px;
 }
 
 .shop {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 11px 1fr 11px 1fr 11px 1fr;
+  -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 11px;
-  grid-row-gap: 20px;
   padding: 40px 0 90px 0;
 }
 .shop .item {
-  margin-top: 50px;
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
   width: 400px;
   height: 550px;
   padding: 30px;
@@ -757,6 +757,7 @@ footer .footer-container .newsletter p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 60px 0;
 }
 .product-advantages .product-advanatge-item {
   width: 35%;
@@ -766,6 +767,70 @@ footer .footer-container .newsletter p {
   margin: 10px 0 0 0;
   font-size: 16px;
   font-weight: 400px;
+}
+
+.bottom-banner {
+  background-image: url("../jpg/product-page.jpg");
+  background-position: left;
+  background-size: 100%;
+  height: 80vh;
+}
+
+.technical-advantages {
+  padding-top: 100px;
+}
+.technical-advantages .line {
+  border-bottom: 2px solid rgb(180, 180, 180);
+}
+.technical-advantages h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin: 10px 0 25px 0;
+}
+.technical-advantages .specifications .item-specifications {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.technical-advantages .specifications .item-specifications h2 {
+  text-transform: uppercase;
+  margin: 0;
+}
+.technical-advantages .specifications .item-specifications .cross {
+  padding: 0;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: none;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.technical-advantages .specifications .item-specifications .item-specifications-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 60%;
+}
+.technical-advantages .specifications .item-specifications .item-specifications-container .table-specifications {
+  font-size: 14px;
+  padding-right: 30%;
+}
+.technical-advantages .specifications .item-specifications .item-specifications-container .table-specifications td:first-child {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 250px;
+  padding-right: 80px;
+}
+.technical-advantages .specifications .item-specifications .item-specifications-container .table-specifications tr {
+  height: 40px;
 }
 
 @media (max-width: 1800px) {
