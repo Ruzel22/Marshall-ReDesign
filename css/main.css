@@ -107,13 +107,20 @@ h1 {
 .header-accessories .header-row nav .navbar li,
 .header-speakers .header-row nav .navbar li {
   padding: 0 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .header-headphones .header-row nav .navbar li a,
 .header-accessories .header-row nav .navbar li a,
 .header-speakers .header-row nav .navbar li a {
   text-decoration: none;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.785);
+}
+.header-headphones .header-row nav .navbar li a:hover,
+.header-accessories .header-row nav .navbar li a:hover,
+.header-speakers .header-row nav .navbar li a:hover {
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header-headphones .header-row nav .user-tools,
 .header-accessories .header-row nav .user-tools,
@@ -131,7 +138,14 @@ h1 {
 .header-speakers .header-row nav .user-tools li a {
   font-size: 25px;
   padding: 0 10px;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.785);
+}
+.header-headphones .header-row nav .user-tools li a:hover,
+.header-accessories .header-row nav .user-tools li a:hover,
+.header-speakers .header-row nav .user-tools li a:hover {
+  color: white;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header-headphones .header-banner .banner-text .banner-title,
 .header-accessories .header-banner .banner-text .banner-title,
@@ -208,11 +222,16 @@ h1 {
 }
 .header-main .header-row nav .navbar li {
   padding: 0 20px;
-  font-weight: 300;
+  font-weight: 600px;
 }
 .header-main .header-row nav .navbar li a {
   text-decoration: none;
   color: #fff;
+}
+.header-main .header-row nav .navbar li a:hover {
+  color: #4c4c4c;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 .header-main .header-row nav .user-tools {
   display: -webkit-box;
@@ -831,6 +850,10 @@ footer .footer-container .newsletter p {
 }
 .technical-advantages .specifications .item-specifications .item-specifications-container .table-specifications tr {
   height: 40px;
+}
+
+.shop-page li a {
+  color: rgba(255, 255, 255, 0.537254902);
 }
 
 @media (max-width: 1800px) {
