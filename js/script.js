@@ -40,7 +40,17 @@ window.addEventListener('DOMContentLoaded', () => {
       fresh:  true,
       colors: ["black", "white", "brown"]
  
+    },
+
+    {
+      src: "./jpg/speakers/marshall-woburn-iii-black.jpg", 
+      name:  "woburn iii", 
+      price:  399.99, 
+      fresh:  true,
+      colors: ["black", "white", "brown"]
+ 
     }
+
   ];
 
   let sliderConfigSO = [
@@ -77,6 +87,23 @@ window.addEventListener('DOMContentLoaded', () => {
       colors: ["black", ]
 
     },
+
+    {
+      src: "./jpg/headphones/plp-marshall-minor-iii-black.jpg", 
+      name: "woburn iiiii", 
+      price: 369.99, 
+      fresh: false,
+      colors: ["black", ]
+
+    },
+    
+    {
+      src: "./jpg/speakers/marshall-acton-ii-black.jpg",
+      name: "action ii",
+      price: 279.99,
+      fresh: true,
+      colors: ["black", "white", "brown"]
+    }, 
   ];
 
 
@@ -124,7 +151,6 @@ window.addEventListener('DOMContentLoaded', () => {
           </div>
         </a>
         `;
-        console.log(1);
         this.parent.append(elem);
     }
   }
@@ -140,7 +166,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   sliderConfigSO.forEach((element) => {
-    console.log(element.colors);
     new Card(
       element.src,
       element.name,
@@ -150,4 +175,75 @@ window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll(".slider-container")[1]
     ).render();
   });
+
+
+  // let widthSlider = window.getComputedStyle(document.querySelector('.slider')).width;
+
+
+ 
+
+  document.querySelectorAll('.slider').forEach(n => {
+    let slideIndex = 1;
+    let offset = 0;
+
+    let slides = n.querySelectorAll(".slide");
+    let slidesContainer = n.querySelector('.slider-container');
+    let next =  n.querySelector(".next");
+    let prev =  n.querySelector(".prev");
+    
+    let widthWindow = window.getComputedStyle(slidesContainer).width;
+    let widthSlider = window.getComputedStyle(n).width;
+    widthSlider = +widthSlider.slice(0, widthSlider.length - 2);
+    widthWindow = +widthWindow.slice(0, widthWindow.length - 2);
+    console.log(widthSlider);
+    console.log(widthWindow);
+
+    next.addEventListener("click", () => {
+      if (widthSlider < 1800){
+        if(offset == 380 * (slides.length - 4)) {
+          offset = 0;
+        } else {
+          offset += 380;
+        }
+      }
+      else{
+        if(offset == 380 * (slides.length - 5)) {
+          offset = 0;
+        } else {
+          offset += 380;
+        }
+      }
+
+      slidesContainer.style.transform = `translateX(-${offset}px)`;
+
+
+      
+    });
+
+    prev.addEventListener("click", () => {
+      if (widthSlider < 1800){
+        if(offset == 0) {
+          offset = 380 * (slides.length - 4);
+        } else {
+          offset -= 380;
+        }
+      }
+      else{
+        if(offset == 0) {
+          offset = 380 * (slides.length - 5);
+        } else {
+          offset -= 380;
+        }
+      }
+      console.log(offset);
+      slidesContainer.style.transform = `translateX(-${offset}px)`;
+
+    });
+
+
+
+  });
+
+ 
+
 });

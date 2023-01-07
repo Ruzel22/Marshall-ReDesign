@@ -267,7 +267,7 @@ h1{
     flex-direction: row;
     margin: 0 auto;
     padding-top: 40px;
-    
+    transition: 0.5s all;
   }
 }
 .item{
@@ -573,7 +573,7 @@ footer{
 }
 .product-main{
   color: white;
-  background-color: #4c4c4c;
+  background-image: url("../jpg/speaker-gray-bg.svg");
   .container{
     display: flex;
     align-items: center;
@@ -660,24 +660,47 @@ footer{
     font-size: 18px;
     margin: 10px 0 25px 0;
   }
+
+  .closed{
+    max-height: 20px;
+    
+  }
+  .opened{
+    max-height: 300px;
+  }
   padding-top: 100px;
   .specifications{
+    
     .item-specifications{
-      display: flex;
+      // display: flex;
       padding: 25px 0;
+      overflow: hidden;
+      transition: max-height 0.9s;
+      cursor: pointer;
+      // transition: max-height 1.5s;
+      // transition: height 1.5s;
+      .item-top{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+      }
+
+
       h2{
         text-transform: uppercase;
         margin: 0;
       }
-      .cross{
+      .item-button{
         padding: 0;
         text-transform: uppercase;
         background-color: transparent;
         border: none;
-        width: 10px;
-        height: 10px;
         cursor: pointer;
         font-size: 18px;
+        color:#8f8f8f94;
+        position: absolute;
+        right: 20px;
+        transition: 0.9s;
 
       }
       justify-content: space-between;
@@ -688,6 +711,7 @@ footer{
         .table-specifications{
           font-size: 14px;
           padding-right: 30%;
+          padding-top: 40px;
           
           td:first-child{
             text-transform: uppercase;

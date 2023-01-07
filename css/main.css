@@ -349,6 +349,8 @@ h1 {
           flex-direction: row;
   margin: 0 auto;
   padding-top: 40px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 
 .item {
@@ -703,7 +705,7 @@ footer .footer-container .newsletter p {
 
 .product-main {
   color: white;
-  background-color: #4c4c4c;
+  background-image: url("../jpg/speaker-gray-bg.svg");
 }
 .product-main .container {
   display: -webkit-box;
@@ -806,28 +808,47 @@ footer .footer-container .newsletter p {
   font-size: 18px;
   margin: 10px 0 25px 0;
 }
+.technical-advantages .closed {
+  max-height: 20px;
+}
+.technical-advantages .opened {
+  max-height: 300px;
+}
 .technical-advantages .specifications .item-specifications {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   padding: 25px 0;
+  overflow: hidden;
+  -webkit-transition: max-height 0.9s;
+  transition: max-height 0.9s;
+  cursor: pointer;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.technical-advantages .specifications .item-specifications .item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
 }
 .technical-advantages .specifications .item-specifications h2 {
   text-transform: uppercase;
   margin: 0;
 }
-.technical-advantages .specifications .item-specifications .cross {
+.technical-advantages .specifications .item-specifications .item-button {
   padding: 0;
   text-transform: uppercase;
   background-color: transparent;
   border: none;
-  width: 10px;
-  height: 10px;
   cursor: pointer;
   font-size: 18px;
+  color: rgba(143, 143, 143, 0.5803921569);
+  position: absolute;
+  right: 20px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
 }
 .technical-advantages .specifications .item-specifications .item-specifications-container {
   display: -webkit-box;
@@ -841,6 +862,7 @@ footer .footer-container .newsletter p {
 .technical-advantages .specifications .item-specifications .item-specifications-container .table-specifications {
   font-size: 14px;
   padding-right: 30%;
+  padding-top: 40px;
 }
 .technical-advantages .specifications .item-specifications .item-specifications-container .table-specifications td:first-child {
   text-transform: uppercase;
