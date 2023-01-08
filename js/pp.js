@@ -16,7 +16,7 @@ items.forEach(item => {
     else{
       item.classList.remove('opened');
       item.classList.add('closed');
-      itemToggle.style.transform = "rotate(-45deg)";
+      itemToggle.style.transform = "rotate(0deg)";
 
       console.log(1);
         // navBurger.classList.remove('pink');
