@@ -4,8 +4,15 @@ body {
   font-family: "Lato", sans-serif;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .container {
   padding: 0 60px;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 section {
@@ -281,7 +288,7 @@ h1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
-  width: 1000px;
+  width: 60%;
 }
 .header-main .header-banner .banner-text .header-big-text {
   font-size: 90px;
@@ -1046,5 +1053,167 @@ footer .footer-container .newsletter p {
   .shop {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 978px) {
+  .shop {
+    display: block;
+  }
+  body .container {
+    padding: 0;
+  }
+  body header .header-main .header-row nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .header-main .header-row nav .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .header-main .header-row nav .navbar li {
+    padding: 20px 0;
+  }
+  body header .header-main .header-banner .banner-text .header-big-text {
+    font-size: 34px;
+    line-height: 35px;
+  }
+  body header .header-main .header-banner .banner-text .header-small-text {
+    display: none;
+  }
+  body header .product-page .product-main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .header-speakers .header-row nav,
+body header .header-headphones .header-row nav,
+body header .header-accessories .header-row nav,
+body header .header-lookbook .header-row nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .header-speakers .header-row nav .navbar,
+body header .header-headphones .header-row nav .navbar,
+body header .header-accessories .header-row nav .navbar,
+body header .header-lookbook .header-row nav .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body header .header-speakers .header-row nav .navbar li,
+body header .header-headphones .header-row nav .navbar li,
+body header .header-accessories .header-row nav .navbar li,
+body header .header-lookbook .header-row nav .navbar li {
+    padding: 20px 0;
+  }
+  body header .header-speakers .header-banner .banner-text,
+body header .header-headphones .header-banner .banner-text,
+body header .header-accessories .header-banner .banner-text,
+body header .header-lookbook .header-banner .banner-text {
+    text-align: center;
+  }
+  body header .header-speakers .header-banner .banner-text .banner-title,
+body header .header-headphones .header-banner .banner-text .banner-title,
+body header .header-accessories .header-banner .banner-text .banner-title,
+body header .header-lookbook .header-banner .banner-text .banner-title {
+    font-size: 34px;
+    line-height: 35px;
+  }
+  body header .header-speakers .header-banner .banner-text .banner-content,
+body header .header-headphones .header-banner .banner-text .banner-content,
+body header .header-accessories .header-banner .banner-text .banner-content,
+body header .header-lookbook .header-banner .banner-text .banner-content {
+    font-size: 15px;
+  }
+  body .product-advantages {
+    height: auto;
+  }
+  body .product-advantages .container .product-advanatge-item {
+    width: 100%;
+  }
+  body .images-description {
+    display: none;
+  }
+  body .user-tabs {
+    width: 100%;
+  }
+  body .user-tabs .tabs-container {
+    width: 100%;
+  }
+  body .user-tabs .tabs-container .user-tabs-buttons {
+    width: 100%;
+  }
+  body .user-tabs .content-container {
+    display: none;
+  }
+  body .lookbook-section-container .lookbook-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body .lookbook-section-container .lookbook-section .main-image {
+    width: 100%;
+  }
+  body .lookbook-section-container .lookbook-section .other-images {
+    width: 100%;
+  }
+  .bottom-banner {
+    height: 40vh;
+    background-size: 150%;
+    background-position: center;
+  }
+  .container-shop {
+    padding: 0;
+  }
+  .container-shop .shop div .item {
+    margin: 0;
+    width: 330px;
+    height: 408px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  .container-shop .shop div .item img {
+    height: auto;
+  }
+  .container-shop .shop div .item .item-settings {
+    margin: 0 auto;
+  }
+  .lookbook .lookbook-container {
+    display: block;
+    height: auto;
+  }
+  .fixed-overlay .modal-image {
+    width: 100%;
+    height: 100%;
+  }
+  .fixed-overlay .modal-image .modal_container .close-modal {
+    right: 0px;
+  }
+  .fixed-overlay .prev {
+    display: none;
+  }
+  .fixed-overlay .next {
+    display: none;
+  }
+  footer .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .footer-container .newsletter {
+    width: 100%;
   }
 }
