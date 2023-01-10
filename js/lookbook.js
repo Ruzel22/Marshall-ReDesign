@@ -29,29 +29,32 @@ window.addEventListener('DOMContentLoaded', () => {
   let next = document.querySelector(".next");
   let prev = document.querySelector(".prev");
 
-  
+  let index = 0;
+  next.addEventListener("click", () => {
 
+    if(index < (imgPaths.length-1)){
+      index+=1;
+    }else{
+      index = 0;
+    }
+    modalContent.style.backgroundImage = imageBlocks[index].style.backgroundImage;
+  });
+
+  prev.addEventListener("click", () => {
+    if(index == 0){
+      index = (imgPaths.length-1);
+    }else{
+      index -= 1;
+    }
+  modalContent.style.backgroundImage = imageBlocks[index].style.backgroundImage;
+  });
+  
   imageBlocks.forEach((image, index) => {
     image.addEventListener("click", () => {
       modal.style.display = "block";
-      next.addEventListener("click", () => {
-        if(index < (imgPaths.length-1)){
-          index+=1;
-        }else{
-          index = 0;
-        }
-      modalContent.style.backgroundImage = imageBlocks[index].style.backgroundImage;
-      });
 
 
-      prev.addEventListener("click", () => {
-        if(index == 0){
-          index = (imgPaths.length-1);
-        }else{
-          index -= 1;
-        }
-      modalContent.style.backgroundImage = imageBlocks[index].style.backgroundImage;
-      });
+      
          
       
       modalContent.style.backgroundImage = imageBlocks[index].style.backgroundImage;
